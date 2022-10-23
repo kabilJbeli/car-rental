@@ -16,18 +16,17 @@ public class Inssurance implements Serializable {
 	 */
 	private static final long serialVersionUID = 844058551203550080L;
 
-	private Integer inssuranceID;
+	private Long inssuranceID;
 
 	@Id
 	@Column(name = "INSSURANCEID")
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	public Integer getInssuranceID() {
+	public Long getInssuranceID() {
 		return inssuranceID;
 	}
 
-	public void setInssuranceID(Integer inssuranceID) {
+	public void setInssuranceID(Long inssuranceID) {
 		this.inssuranceID = inssuranceID;
 	}
-	
-	
+
 }

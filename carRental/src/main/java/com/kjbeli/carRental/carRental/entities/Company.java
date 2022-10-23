@@ -15,16 +15,16 @@ public class Company implements Serializable {
 	 */
 	private static final long serialVersionUID = 2834950868118018638L;
 
-	private Integer companyID;
+	private Long companyID;
 
 	@Id
 	@Column(name = "COMPANYID")
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	public Integer getCompanyID() {
+	public Long getCompanyID() {
 		return companyID;
 	}
 
-	public void setCompanyID(Integer companyID) {
+	public void setCompanyID(Long companyID) {
 		this.companyID = companyID;
 	}
 

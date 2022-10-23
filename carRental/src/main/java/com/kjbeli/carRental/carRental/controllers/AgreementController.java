@@ -9,40 +9,40 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.kjbeli.carRental.carRental.entities.Agreement;
 import com.kjbeli.carRental.carRental.entities.Car;
 import com.kjbeli.carRental.carRental.entities.Company;
-import com.kjbeli.carRental.carRental.entities.Contract;
-import com.kjbeli.carRental.carRental.interfaces.IContract;
+import com.kjbeli.carRental.carRental.interfaces.IAgreement;
 
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")
-@RequestMapping(value = "/contract")
-public class ContractController {
+@RequestMapping(value = "/agreement")
+public class AgreementController {
 
-	private IContract Icontract;
+	private IAgreement Iagreement;
 
-	@GetMapping("/getContractListByCompany")
-	public List<Contract> getContractListByCompany(Company company) {
+	@GetMapping("/getAgreementListByCompany")
+	public List<Agreement> getAgreementListByCompany(Company company) {
 		return null;
 	}
 	
-	@GetMapping("/getContractList")
-	public List<Contract> getContractList() {
+	@GetMapping("/getAgreementList")
+	public List<Agreement> getAgreementList() {
 		return null;
 	}
 	
-	@GetMapping("/getContractListByCar")
-	public List<Contract> getContractListByCar(Car car) {
+	@GetMapping("/getAgreementListByCar")
+	public List<Agreement> getAgreementListByCar(Car car) {
 		return null;
 	}
 	
-	@PostMapping("/creatContract")
-	public Boolean creatContract(Contract contract) {
+	@PostMapping("/creatAgreement")
+	public Boolean creatAgreement(Agreement contract) {
 		return null;
 	}
 	
-	@PutMapping("/updateContractInformation")
-	public Boolean updateContractInformation(Contract contract) {
+	@PutMapping("/updateAgreementInformation")
+	public Boolean updateAgreementInformation(Agreement contract) {
 		return null;
 	}	
 
